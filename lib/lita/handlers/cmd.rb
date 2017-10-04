@@ -37,7 +37,7 @@ module Lita
         err = String.new
 
         script_path  = "#{config.scripts_dir}/#{script}"
-        user_env_var = { 'LITA_USER' => resp.user.name }
+        user_env_var = { 'LITA_USER' => resp.user.name, 'LITA_ID' => resp.user.id }
 
         creds    = extract_creds(script, resp.user.metadata)
         env_vars = user_env_var.merge(creds) unless creds.nil?
