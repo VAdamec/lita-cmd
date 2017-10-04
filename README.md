@@ -139,6 +139,8 @@ Set `lita:handlers:cmd:@test_var`. This will be presented to all of your scripts
 
 - The user name of the calling user will be saved in an environment variable
   called `LITA_USER`.
+- The ID the calling user will be saved in an environment variable
+  called `LITA_ID`.
 - Make sure that your files are executables (`chmod +x FILE`)
 - Make sure that your files have the proper sheband (`#!/bin/bash`)
 
